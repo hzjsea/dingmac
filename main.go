@@ -9,4 +9,16 @@ https://segmentfault.com/a/1190000023029219
  */
 
 func main(){
+	w := PopupWindow{
+		message: "你好",
+		action:  "display alert",
+		icon:    "as critical",
+	}
+	go func() {
+		PollDing(&w)
+	}()
+
+	select {
+
+	}
 }
